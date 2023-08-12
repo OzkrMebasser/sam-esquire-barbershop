@@ -403,6 +403,10 @@ body {
   font-weight: var(--fw-600);
   text-transform: uppercase;
   line-height: 1.4;
+ 
+}
+.logo-box{
+  float: left; display: flex
 }
 
 .logo .span {
@@ -531,10 +535,12 @@ body {
 }
 
 .barbers-pole {
-  height: 45px;
-  position: fixed;
+  padding: 7px;
+  height: 63px;
+ 
+  /* position: fixed; */
   /* padding-left: 0; */
-  left: 70px;
+  
 }
 
 /*-----------------------------------*\
