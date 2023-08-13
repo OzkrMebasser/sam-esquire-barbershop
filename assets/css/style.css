@@ -406,7 +406,9 @@ body {
  
 }
 .logo-box{
-  float: left; display: flex
+  /* float: left; display: flex */
+  display: flex;
+  align-items: center;
 }
 
 .logo .span {
@@ -435,6 +437,23 @@ body {
   );
   color: transparent;
   -webkit-background-clip: text;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  /* background-color: red; */
+  width: auto;
+}
+
+.logo-text {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-right: 10px; /* Add spacing between the text and the image */
+}
+
+.barbers-pole {
+  
+    height: 50px; 
 }
 
 .nav-toggle-btn {
@@ -534,14 +553,17 @@ body {
   min-height: 5rem; /* Establece un espacio mínimo para el texto */
 }
 
-.barbers-pole {
+/* .barbers-pole {
   padding: 7px;
-  height: 63px;
+  height: 63px; */
  
   /* position: fixed; */
   /* padding-left: 0; */
   
-}
+/* } */
+
+
+
 
 /*-----------------------------------*\
   #SERVICE
