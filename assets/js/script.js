@@ -88,8 +88,18 @@ function toggleNavbar() {
   // }
 }
 
-
-
+function toggleNavbar() {
+  navbar.classList.toggle("active");
+  
+  // Toggle icon and rotation
+  if (navbar.classList.contains("active")) {
+    menuIcon.name = "cut-outline";
+    menuIcon.classList.add("rotate-360");
+  } else {
+    menuIcon.name = "menu-outline";
+    menuIcon.classList.remove("rotate-360");
+  }
+}
 
 /**
  * header & back top btn, and book now btn active when scroll down to 100px

@@ -329,6 +329,15 @@ body {
   object-fit: cover;
 }
 
+.rotate-360 {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+
+
+
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -1169,9 +1178,9 @@ a.contact-link:is(:hover, :focus) {
 @media (max-width: 575px) {
   .barbers-pole {
     height: 40px;
-    position: absolute;
+    
     /* padding: 0 0 0 70px;   */
-    margin-left: 60px;
+    margin-left:0px;
   }
 
   .h1 {
