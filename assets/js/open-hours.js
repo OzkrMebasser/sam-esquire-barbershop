@@ -40,7 +40,9 @@ let now = new Date()
           dayDiv.style["text-decoration"] = "underline"
         //   dayDiv.style["transform"] = "scale(1.03)"
 
-        }
+        }else {
+          dayDiv.style["color"] = "white";  
+      }
       }
   
       OpenHours["generateTime"] = function (hours) {
@@ -56,9 +58,12 @@ let now = new Date()
             let dayTitleElement = document.createElement("td")
             let dayTimesElement = document.createElement("td")
   
-            let dayTitle = document.createTextNode(day)
+            let dayTitle = document.createTextNode(day + "  ")
             dayTitleElement.appendChild(dayTitle)
+            dayTitleElement.style.width = "100px";
             dayDiv.appendChild(dayTitleElement)
+
+            
   
             let dayHours = ""
   
