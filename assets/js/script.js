@@ -1,4 +1,54 @@
 'use strict';
+// const languages = [
+//   "We speak English", 
+//   "Nous parlons Français", 
+//   "نحن نتحدث العربية",
+//   "نتكلم تمازيغت"
+
+// ];
+
+// let i = 0;
+
+// setInterval(function() {
+
+//   document.getElementById("language").innerText = languages[i];
+  
+//   setTimeout(function() {
+//     document.getElementById("language").innerText = "";
+//   }, 2000);
+
+//   i++;
+  
+//   if(i >= languages.length) {
+//     i = 0; 
+//   }
+
+// }, 3000);
+
+// const languages = [
+//   "We speak English",
+//   "Nous parlons Français", 
+//   "نحن نتحدث العربية",
+//   "German"  
+// ];
+
+// const track = document.querySelector(".track");
+
+// languages.forEach(lang => {
+//   let text = document.createElement("div");
+//   text.innerText = lang;
+  
+//   track.appendChild(text);
+// });
+const track = document.querySelector(".track");
+const content = document.querySelector(".content");
+
+track.addEventListener("animationiteration", () => {
+  track.style.transition = "none";
+  track.style.transform = `translateX(${content.clientWidth}px)`;
+});
+
+
 const phrases = [
   "Sharp cuts, sharp service.",
   "Where every cut is a work of art!",
