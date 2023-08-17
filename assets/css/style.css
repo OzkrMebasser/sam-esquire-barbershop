@@ -10,13 +10,7 @@
   fill: red; 
 } */
 
-.icono {
-  filter: invert(87%) sepia(50%) saturate(900%) hue-rotate(320deg)
-    brightness(80%) contrast(80%);
-  width: 100px;
-  height: 100px;
-  margin: auto;
-}
+
 
 /* .icono { filter: contrast(40%) sepia(1) hue-rotate(20deg) saturate(1000%); } */
 :root {
@@ -24,7 +18,7 @@
    * colors
    */
   /* --golden-bg: filter: invert(83%) sepia(70%) saturate(502%) hue-rotate(320deg) brightness(89%) contrast(86%); */
-
+  --swiper-theme-color: #d6ad60;
   --overlayer-light-black: hsla(0, 0%, 5%, 0.438);
   --rich-black-fogra-39: hsl(0, 0%, 5%);
   --black-black: hsl(0, 0%, 0%);
@@ -266,6 +260,9 @@ body {
   font-size: var(--fs-24);
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
 .btn {
   color: var(--black-black);
 
@@ -284,6 +281,23 @@ body {
   color: var(--black-black);
 }
 
+.btn-yellow {
+  color: var(--black-black);
+
+  background-image: var(--harvest-gold);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  padding: 10px 25px;
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+ 
+}
 /* .btn::before {
   background-color: var(--eerie-black-1);
   inset: 0;
@@ -294,6 +308,20 @@ body {
 
 .btn:is(:hover, :focus)::before { transform: skewY(-15deg) scaleY(2.5); } */
 
+.swiper-pagination-bullet-active{
+  color: var(--indian-yellow);
+}
+
+.swiper-pagination-bullet:active{
+  color: var(--indian-yellow);
+}
+.icono {
+  filter: invert(87%) sepia(50%) saturate(900%) hue-rotate(320deg)
+    brightness(80%) contrast(80%);
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
 .text-center {
   text-align: center;
 }
@@ -322,6 +350,14 @@ body {
   font-weight: bold;
   font-size: 2rem;
   color: var(--indian-yellow) !important;
+  margin:auto;
+}
+
+.card-title-bold{
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--indian-yellow) !important;
+  /* margin:auto; */
 }
 .img-cover {
   width: 100%;
@@ -349,6 +385,7 @@ body {
 .header-top-list .social-list {
   display: flex;
   align-items: center;
+  background-color: transparent;
   height: 50px;
   color: var(--harvest-gold);
   width: 100%;
@@ -624,16 +661,19 @@ body {
 }
 
 .service-card .card-title {
-  margin-block: 15px 12px;
+  /* margin-block: 10px 12px; */
+  margin: 50px;
   transition: var(--transition-1);
+  
 }
+
 
 .service-card .card-title:is(:hover, :focus) {
   color: var(--indian-yellow);
 }
 
 .service-card .card-text {
-  margin-block-end: 30px;
+  margin-top: 0px;
 }
 
 .service-card .card-btn {
@@ -752,6 +792,7 @@ body {
 .pricing-card .h3 {
   --fs-24: 2rem;
   margin-block-end: 8px;
+  
 }
 
 .pricing-card .card-price {
@@ -759,6 +800,7 @@ body {
   font-family: var(--ff-oswald);
   font-size: var(--fs-30);
   font-weight: var(--fw-500);
+  margin-top: 80px;
 }
 
 .bg-image {
@@ -779,10 +821,13 @@ body {
 
 .gallery-card {
   position: relative;
+  
 }
 
 .gallery-card .card-banner .img-cover {
   transition: var(--transition-2);
+
+  
 }
 
 .gallery-card:is(:hover, :focus-within) .card-banner .img-cover {
@@ -791,7 +836,7 @@ body {
 
 .gallery-card .card-content {
   position: absolute;
-  inset: 15px;
+  inset: 40px;
   background-color: var(--eerie-black-2_85);
   display: flex;
   flex-direction: column;
@@ -799,9 +844,10 @@ body {
   align-items: center;
   gap: 10px;
   opacity: 0;
-  transform: scale(0.8);
+  transform: scale(1.1);
   transition: var(--transition-2);
   border-radius: 8px;
+  text-align: center;
 }
 
 .gallery-card:is(:hover, :focus-within) .card-content {
@@ -816,10 +862,10 @@ body {
 .gallery-card .card-btn {
   background-color: var(--white);
   color: var(--indian-yellow);
-  font-size: 18px;
-  padding: 16px;
+  /* font-size: 18px; */
+  padding: 12px;
   border-radius: var(--radius-5);
-  margin-block-start: 12px;
+  margin-block-start: 20px;
   transition: var(--transition-1);
 }
 
@@ -829,7 +875,7 @@ body {
 }
 
 /*-----------------------------------*\
-  #APPOINTMENT
+  #MAP 
 \*-----------------------------------*/
 
 .appoin {
@@ -923,6 +969,136 @@ textarea.input-field {
 .form-btn:is(:hover, :focus) {
   background-color: var(--white);
   color: var(--eerie-black-1);
+}
+
+/*-----------------------------------*\
+  #REVIEWS 
+\*-----------------------------------*/
+#craouselContainer {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.swiper-container {
+  border-radius: 5px;
+  width: 70vw;
+  overflow: hidden;
+  height: fit-content;
+  height: fit-content;
+  font-size: 50px;
+  position: relative;
+  padding-bottom: 50px;
+  font-family: sans-serif;
+  align-items: center;;
+}
+
+.swiper-slide {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px;
+ 
+  background-color: white;
+
+}
+
+.swiper-slide .ImgHolder {
+  background-color: var(--indian-yellow);
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.ContentHolder::before {
+  background-color: var(--indian-yellow);
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -5px;
+  z-index: -1;
+  right: 0px;
+}
+
+.ContentHolder {
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  border-top-right-radius: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+  border: 1px solid #cb9b51;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--indian-yellow);
+}
+
+.swiper-button {
+  border: 1px solid white;
+}
+
+.swiper-slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  object-fit: cover;
+  border: 3px solid var(--indian-yellow);
+  outline: 2px solid white;
+}
+
+.swiper-slide h3 {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.swiper-slide p {
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+@media (max-width:638px) {
+  .swiper-container {
+    width: 100%;
+  }
+}
+
+@media (max-width:500px) {
+  .swiper-container {
+    width: 70vw;
+  }
+}
+
+@media (max-width:300px) {
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    border-radius: 0px;
+  }
+
+  .swiper-container .ImgHolder {
+    border-radius: 0px;
+  }
+  .ContentHolder{
+    border-radius: 0px;
+  }
 }
 
 /*-----------------------------------*\
@@ -1367,6 +1543,12 @@ a.contact-link:is(:hover, :focus) {
     grid-template-columns: 1fr 1fr;
   }
 
+  .gallery-card .card-banner .img-cover {
+    transition: var(--transition-2);
+   height: 330px;
+    
+  }
+
   /**
    * APPOINTMENT
    */
@@ -1769,6 +1951,12 @@ a.contact-link:is(:hover, :focus) {
     flex-grow: 1;
   }
 
+
+  .pricing-card .card-price {
+    
+    margin-top: 45px;
+  }
+  
   /**
    * FOOTER
    */

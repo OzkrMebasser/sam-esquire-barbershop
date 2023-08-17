@@ -43,6 +43,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 
     <!-- 
     - preload images
@@ -109,7 +111,7 @@
               </li>
 
               <li class="navbar-item">
-                <a href="./gallery.html" class="navbar-link" data-nav-link
+                <a href="./our_gallery.html" class="navbar-link" data-nav-link
                   >Gallery</a
                 >
               </li>
@@ -291,6 +293,7 @@
             </p>
 
             <div class="pricing-tab-container">
+              <!-- Menu of services -->
               <ul class="tab-filter">
                 <li>
                   <button class="filter-btn active" data-filter-btn="all">
@@ -301,7 +304,7 @@
                     <p class="btn-text">All Pricing</p>
                   </button>
                 </li>
-
+                <!-- Hair Cuts -->
                 <li>
                   <button class="filter-btn" data-filter-btn="hair-cuts">
                     <div class="btn-icon">
@@ -311,7 +314,7 @@
                     <p class="btn-text">Hair Cuts</p>
                   </button>
                 </li>
-
+                <!-- Beard services -->
                 <li>
                   <button class="filter-btn" data-filter-btn="beard-services">
                     <div class="btn-icon">
@@ -321,7 +324,7 @@
                     <p class="btn-text">Beard services</p>
                   </button>
                 </li>
-
+                <!-- Hair protein -->
                 <li>
                   <button class="filter-btn" data-filter-btn="treatment">
                     <div class="btn-icon">
@@ -332,40 +335,42 @@
                   </button>
                 </li>
 
-                <!-- <li>
-                  <button class="filter-btn" data-filter-btn="meditations">
-                    <div class="btn-icon">
-                      <i class="flaticon-yoga" aria-hidden="true"></i>
-                    </div>
-
-                    <p class="btn-text">Meditations</p>
-                  </button>
-                </li>
-
-                <li>
-                  <button class="filter-btn" data-filter-btn="shaving">
-                    <div class="btn-icon">
-                      <i class="flaticon-razor-blade" aria-hidden="true"></i>
-                    </div>
-
-                    <p class="btn-text">Shaving</p>
-                  </button>
-                </li> -->
               </ul>
-
+                  <!-- All prices -->
               <ul class="grid-list">
+                <!-- Men’s haircut -->
                 <li data-filter="hair-cuts">
                   <div class="pricing-card">
                     <figure class="card-banner img-holder figure-size">
                       <img
-                        src="./assets/images/pricing-1.jpg"
+                        src="./assets/images/price_1_regularhaircut.jpeg"
                         alt="Men’s haircut"
                         class="img-cover"
                       />
                     </figure>
 
                     <div class="wrapper">
-                      <h3 class="h3 card-title">Men’s haircut</h3>
+                      <h3 class="h3 card-title uppercase">Men’s haircut</h3>
+
+                      <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="30">$30</data>
+                  </div>
+                </li>
+                <!-- Skin fade -->
+                <li data-filter="hair-cuts">
+                  <div class="pricing-card">
+                    <figure class="card-banner img-holder figure-size">
+                      <img
+                        src="./assets/images/price_2_skinfade.jpg"
+                        alt="Men’s haircut"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title uppercase">Skin fade</h3>
 
                       <p class="card-text">Clean & simple 30-40 minutes</p>
                     </div>
@@ -373,59 +378,59 @@
                     <data class="card-price" value="35">$35</data>
                   </div>
                 </li>
-
+                <!-- Men’s haircut and beard -->
                 <li data-filter="beard-services">
                   <div class="pricing-card">
                     <figure class="card-banner img-holder figure-size">
                       <img
-                        src="./assets/images/pricing-3.jpg"
-                        alt="Shaving & Facial"
+                        src="./assets/images/price_3_haircutnbeard.jpeg"
+                        alt="Men’s haircut and beard"
                         class="img-cover"
                       />
                     </figure>
 
                     <div class="wrapper">
-                      <h3 class="h3 card-title">Men’s haircut and beard</h3>
+                      <h3 class="h3 card-title uppercase">Men’s haircut and beard</h3>
 
-                      <p class="card-text">Clean & simple 30-40 minutes</p>
+                      <p class="card-text">Clean & simple 40-50 minutes</p>
                     </div>
 
                     <data class="card-price" value="55">$55</data>
                   </div>
                 </li>
-
+                <!-- Beard trim -->
                 <li data-filter="beard-services">
                   <div class="pricing-card">
                     <figure class="card-banner img-holder figure-size">
                       <img
-                        src="./assets/images/pricing-2.jpg"
-                        alt="Hair Color & Wash"
+                        src="./assets/images/price_4_beartrim.jpg"
+                        alt="Beard trim"
                         class="img-cover"
                       />
                     </figure>
 
                     <div class="wrapper">
-                      <h3 class="h3 card-title">Beard trim</h3>
+                      <h3 class="h3 card-title uppercase">Beard trim</h3>
 
                       <p class="card-text">Clean & simple 30-40 minutes</p>
                     </div>
 
-                    <data class="card-price" value="25">$25</data>
+                    <data class="card-price" value="20">$20</data>
                   </div>
                 </li>
-
+                <!-- Kids haircut -->
                 <li data-filter="hair-cuts">
                   <div class="pricing-card">
                     <figure class="card-banner img-holder figure-size">
                       <img
-                        src="./assets/images/pricing-4.jpg"
+                        src="./assets/images/price_6_kidshaircut.jpg"
                         alt="Body Massage"
                         class="img-cover"
                       />
                     </figure>
 
                     <div class="wrapper">
-                      <h3 class="h3 card-title">Kids haircut</h3>
+                      <h3 class="h3 card-title uppercase">Kids haircut</h3>
 
                       <p class="card-text">Clean & simple 30-40 minutes</p>
                     </div>
@@ -433,26 +438,47 @@
                     <data class="card-price" value="25">$25</data>
                   </div>
                 </li>
-
+                <!-- Hair protein -->
                 <li data-filter="treatment">
                   <div class="pricing-card">
                     <figure class="card-banner img-holder figure-size">
                       <img
-                        src="./assets/images/pricing-5.jpg"
+                        src="./assets/images/price_7_hairproteion.jpg"
                         alt="Beauty & Spa"
                         class="img-cover"
                       />
                     </figure>
 
                     <div class="wrapper">
-                      <h3 class="h3 card-title">Hair protein</h3>
+                      <h3 class="h3 card-title uppercase">Hair protein</h3>
+
+                      <p class="card-text">Clean & simple 40-50 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="100">$100</data>
+                  </div>
+                </li>
+                <!-- Beard hot shave -->
+                <li data-filter="beard-services">
+                  <div class="pricing-card">
+                    <figure class="card-banner img-holder figure-size">
+                      <img
+                        src="./assets/images/price_5_hotshave.jpeg"
+                        alt="Hot shave"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title uppercase">Beard hot shave</h3>
 
                       <p class="card-text">Clean & simple 30-40 minutes</p>
                     </div>
 
-                    <data class="card-price" value="90">$90</data>
+                    <data class="card-price" value="30">$30</data>
                   </div>
                 </li>
+
               </ul>
             </div>
           </div>
@@ -481,116 +507,117 @@
                 </p>
               </div>
 
-              <a href="./gallery.html" class="btn has-before">
+              <a href="./our_gallery.html" class="btn has-before">
                 <span class="span">Explore Our Gallery</span>
 
                 <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
               </a>
             </div>
-
+            <!-- Home mini-gallery  -->
             <ul class="grid-list">
+              <!-- #1 pic home gallery -->
               <li>
                 <div class="gallery-card">
                   <figure class="card-banner img-holder img-shadows">
                     <img
-                      src="./assets/images/gallery-1.jpg"
+                      src="./assets/images/home_gallery_1.jpg"
                       width="422"
                       height="550"
                       loading="lazy"
-                      alt="Hair Cutting"
+                      alt="Haircut Sam Esquire barbershop"
                       class="img-cover"
                     />
                   </figure>
 
                   <div class="card-content">
-                    <p class="card-text bold-title">Esquire Barbershop</p>
+                    <p class="card-text card-title-bold uppercase">Sam Esquire Barbershop</p>
                     <p class="card-text">Barbers & Hair cut Services</p>
 
                     <a
-                      href="./gallery.html"
-                      class="card-btn"
-                      aria-label="Read more"
+                      href="./our_gallery.html"
+                      class="btn"
+                      aria-label="Open Gallery"
                       >Open Gallery
                     </a>
                   </div>
                 </div>
               </li>
-
+              <!-- #2 pic home gallery -->
               <li>
                 <div class="gallery-card">
                   <figure class="card-banner img-holder img-shadows">
                     <img
-                      src="./assets/images/gallery-2.jpg"
+                      src="./assets/images/home_gallery_2.jpeg"
                       width="422"
                       height="550"
                       loading="lazy"
-                      alt="Hair Cutting"
+                      alt="Haircut Sam Esquire barbershop"
                       class="img-cover"
                     />
                   </figure>
 
                   <div class="card-content">
-                    <p class="card-text bold-title">Esquire Barbershop</p>
+                    <p class="card-text card-title-bold uppercase">Sam Esquire Barbershop</p>
                     <p class="card-text">Barbers & Hair cut Services</p>
 
                     <a
-                      href="./gallery.html"
-                      class="card-btn"
-                      aria-label="Read more"
+                      href="./our_gallery.html"
+                      class="btn"
+                      aria-label="Open Gallery"
                       >Open Gallery
                     </a>
                   </div>
                 </div>
               </li>
-
+              <!-- #3 pic home gallery -->
               <li>
                 <div class="gallery-card">
                   <figure class="card-banner img-holder img-shadows">
                     <img
-                      src="./assets/images/gallery-3.jpg"
+                      src="./assets/images/home_gallery_3.png"
                       width="422"
                       height="550"
                       loading="lazy"
-                      alt="Hair Cutting"
+                      alt="Haircut Sam Esquire barbershop"
                       class="img-cover"
                     />
                   </figure>
 
                   <div class="card-content">
-                    <p class="card-text bold-title">Esquire Barbershop</p>
+                    <p class="card-text card-title-bold uppercase">Sam Esquire Barbershop</p>
                     <p class="card-text">Barbers & Hair cut Services</p>
 
                     <a
-                      href="./gallery.html"
-                      class="card-btn"
-                      aria-label="Read more"
+                      href="./our_gallery.html"
+                      class="btn"
+                      aria-label="Open Gallery"
                       >Open Gallery
                     </a>
                   </div>
                 </div>
               </li>
-
+              <!-- #4 pic home gallery -->
               <li>
                 <div class="gallery-card">
                   <figure class="card-banner img-holder img-shadows">
                     <img
-                      src="./assets/images/gallery-4.jpg"
+                      src="./assets/images/home_gallery_4.jpg"
                       width="422"
                       height="550"
                       loading="lazy"
-                      alt="Hair Cutting"
+                      alt="Haircut Sam Esquire barbershop"
                       class="img-cover"
                     />
                   </figure>
 
                   <div class="card-content">
-                    <p class="card-text bold-title">Esquire Barbershop</p>
+                    <p class="card-text card-title-bold uppercase">Sam Esquire Barbershop</p>
                     <p class="card-text">Barbers & Hair cut Services</p>
 
                     <a
-                      href="./gallery.html"
-                      class="card-btn"
-                      aria-label="Read more"
+                      href="./our_gallery.html"
+                      class="btn"
+                      aria-label="Open Gallery"
                       >Open Gallery
                     </a>
                   </div>
@@ -623,7 +650,7 @@
               </figure>
 
               <div class="card-content">
-                <h3 class="h3 section-title">
+                <h3 class="h3 section-title uppercase">
                   Right in Victoria's downtown core, our barbershop brings style
                   to the heart of the city.
                 </h3>
@@ -679,8 +706,39 @@
             </div>
           </div>
         </section>
+
+           <!-- 
+        #REVIEWS 
+      -->
+   
+     
+    
+        <!-- <section class="section">
+
+          <div id="craouselContainer" class="swiper-container ">
+            <h3 class="h3 section-title uppercase ">
+              What Our Customers Are Saying
+            </h3>
+    
+            <div class="swiper-wrapper" id="slideHolder">
+                Slides
+    
+            </div>
+            <div class="swiper-pagination"></div>
+            
+        </div>
+        </section> -->
+
+  
+  
+
       </article>
     </main>
+
+
+
+   
+
 
     <!-- 
     - #FOOTER
@@ -827,7 +885,7 @@
     - custom js link
   -->
     <script src="./assets/js/script.js" defer></script>
-    <script src="./assets/js/open-hours.js" charset="utf-8"></script>
+    <script src="./assets/js/open_hours.js" charset="utf-8"></script>
     <script>
       const hours = {
         Monday: { start: 1000, end: 2000 },
@@ -853,5 +911,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
 </html>
