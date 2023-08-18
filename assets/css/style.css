@@ -582,7 +582,8 @@ body {
 
 .hero::before {
   inset: 0;
-  background-color: var(--overlayer-light-black);
+  /* background-color: var(--overlayer-light-black); */
+  background-color: rgba(0, 0, 0, 0.719); 
   mix-blend-mode: multiply;
   z-index: -1;
 }
