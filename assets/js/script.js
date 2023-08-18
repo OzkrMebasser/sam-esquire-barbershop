@@ -237,4 +237,3 @@ function queryResizer() {
   swiper.update()
 }
 
-
