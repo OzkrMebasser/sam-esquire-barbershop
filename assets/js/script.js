@@ -10,6 +10,8 @@ track.addEventListener("animationiteration", () => {
 
 
 const phrases = [
+  "We specialize in precision cuts for men",
+  "Our barbers are trained in the latest men's styles and techniques",
   "Sharp cuts, sharp service.",
   "Where every cut is a work of art!",
   "Trimming traditions, modern styles!",
@@ -116,21 +118,24 @@ function toggleNavbar() {
  */
 
 const header = document.querySelector("[data-header]");
-// const backTopBtn = document.querySelector("[data-back-top-btn]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 // const bookNowBtn = document.querySelector("[data-book-now-btn]");
 const bottomMenu = document.querySelector("[data-bottom-menu]");
+const mediaBtn = document.querySelector("[data-media-btn]");
 
 const headerActive = function () {
   if (window.scrollY > 300) {
     header.classList.add("active");
     bottomMenu.classList.add("active");
-    // backTopBtn.classList.add("active");
+    backTopBtn.classList.add("active");
     // bookNowBtn.classList.add("active");
+    mediaBtn.classList.add("active");
   } else {
     header.classList.remove("active");
     bottomMenu.classList.remove("active");
-    // backTopBtn.classList.remove("active");
+    backTopBtn.classList.remove("active");
     // bookNowBtn.classList.remove("active");
+    mediaBtn.classList.remove("active");
   }
 }
 
@@ -237,3 +242,18 @@ function queryResizer() {
   swiper.update()
 }
 
+// Get all elements with class "float"
+const floats = document.querySelectorAll('.float'); 
+
+// Loop through each element 
+floats.forEach(float => {
+
+  // Add click event listener
+  float.addEventListener('click', () => {
+
+    // Toggle the "open" class
+    float.classList.toggle('open');
+
+  });
+
+});

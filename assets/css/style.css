@@ -18,7 +18,7 @@
    * colors
    */
   /* --golden-bg: filter: invert(83%) sepia(70%) saturate(502%) hue-rotate(320deg) brightness(89%) contrast(86%); */
-  --swiper-theme-color: #d6ad60;
+  --swiper-theme-color: #d6ad60 !important;
   --overlayer-light-black: hsla(0, 0%, 5%, 0.438);
   --rich-black-fogra-39: hsl(0, 0%, 5%);
   --black-black: hsl(0, 0%, 0%);
@@ -281,6 +281,26 @@ body {
   color: var(--black-black);
 }
 
+.simple-btn{
+  
+    color: var(--black-black);
+  
+    background-image: var(--golden-yellow);
+    /* display: flex; */
+    align-items: center;
+    /* gap: 10px; */
+    max-width: max-content;
+    padding: 10px 25px;
+    font-family: var(--ff-oswald);
+    font-size: var(--fs-14);
+    font-weight: var(--fw-600);
+    text-transform: uppercase;
+    border-radius: var(--radius-5);
+    /* overflow: hidden;
+    */
+  
+}
+
 .btn-yellow {
   color: var(--black-black);
 
@@ -465,6 +485,7 @@ body {
 }
 
 .logo {
+  margin-left: 15px;
   color: var(--indian-yellow);
   font-family: var(--ff-oswald);
   font-size: 2.7rem;
@@ -476,19 +497,30 @@ body {
 .logo-box{
   /* float: left; display: flex */
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .logo .span {
   color: var(--white);
   font-family: var(--ff-rubik);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: var(--fw-300);
   text-transform: capitalize;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+.logo .esquire{
+  font-family: var(--ff-rubik);
+  font-size: 1.1rem;
+  font-weight: var(--fw-300);
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  color: var(--golden-yellow);
+  font-weight: 700;
 }
 
 .logo-effect {
+  letter-spacing: 5px;
   font-size: 2.7rem;
   font-weight: var(--fw-600);
   text-transform: uppercase;
@@ -518,10 +550,19 @@ body {
   font-size: 24px; /* Adjust the font size as needed */
   margin-right: 10px; /* Add spacing between the text and the image */
 }
+/* 
+.esquire{
 
+  display: inline;
+  font-family: var(--ff-rubik);
+  font-size: 1.3rem;
+  font-weight: var(--fw-300);
+  text-transform: capitalize;
+  letter-spacing: 5px;
+} */
 .barbers-pole {
-  
-    height: 50px; 
+    
+    height: 68px; 
 }
 
 .nav-toggle-btn {
@@ -583,7 +624,7 @@ body {
 .hero::before {
   inset: 0;
   /* background-color: var(--overlayer-light-black); */
-  background-color: rgba(0, 0, 0, 0.719); 
+  background-color: rgba(0, 0, 0, 0.699); 
   mix-blend-mode: multiply;
   z-index: -1;
 }
@@ -591,7 +632,9 @@ body {
 .hero-text {
   color: var(--white);
   margin-block: 15px 40px;
+  z-index: 100;
 }
+
 
 .hero-video {
   position: absolute;
@@ -648,6 +691,7 @@ body {
 
 .service-card {
   background-color: var(--white);
+  height: 494px;
   padding: 60px 25px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
@@ -665,6 +709,7 @@ body {
   /* margin-block: 10px 12px; */
   margin: 50px;
   transition: var(--transition-1);
+  height: 64px;
   
 }
 
@@ -1269,10 +1314,10 @@ a.contact-link:is(:hover, :focus) {
   #BACK TO TOP
 \*-----------------------------------*/
 
-.back-top-btn {
+/* .back-top-btn {
   position: fixed;
-  bottom: 10px;
-  right: 20px;
+  bottom: 50px;
+  right: 124px;
   background-image: var(--golden-yellow);
   color: var(--black-black);
   font-size: 20px;
@@ -1283,6 +1328,33 @@ a.contact-link:is(:hover, :focus) {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-1);
+} */
+/* position:fixed;
+bottom:50px;
+left:24px;
+text-align:center;
+z-index:1000; */
+
+/* .back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+} */
+
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--harvest-gold);
+  color: var(--black-black);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: var(--radius-5);
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+  margin: auto;
 }
 
 .back-top-btn.active {
@@ -1290,6 +1362,30 @@ a.contact-link:is(:hover, :focus) {
   visibility: visible;
   transform: translateY(-10px);
 }
+
+.media-btn {
+  /* position: fixed;
+  bottom: 10px;
+  left: 20px; */
+  background-color: var(--harvest-gold);
+  color: var(--black-black);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: var(--radius-5);
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+  margin: auto;
+}
+
+.media-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+
 
 /*-----------------------------------*\
   #BOOK NOW 
@@ -1337,18 +1433,24 @@ a.contact-link:is(:hover, :focus) {
 
 .bottom-sticky-menu {
   position: sticky;
-  bottom: 0;
-  left: 0;
+  font-size: 12px;
+  bottom: 10px;
   width: 100%;
-  height: 60px;
-  background: var(--black-black);
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  z-index: 3;
-  opacity: 0;
+  margin: auto;
   visibility: hidden;
   transition: var(--transition-1);
+  padding: 10px;
+  z-index: 4;
+  opacity: 0;
+    animation: 1.5s linear 0s infinite normal pulse;
+
+  /* bottom: 0; */
+  /* left: 0; */
+  /* height: 60px; */
+  /* background: var(--black-black); */
+  /* display: flex; */
+  /* background-color: red; */
+ 
 }
 
 .bottom-sticky-menu.active {
@@ -1357,12 +1459,27 @@ a.contact-link:is(:hover, :focus) {
   transform: translateY(-10px);
 }
 
-.btns {
+/* Animations */
+@keyframes pulse {
+    0% {
+      box-shadow: 0px 1px 0px 3px #d6ad6038, 0px 0px 0px 0px #cb9a517e;
+    }
+    30% {
+      box-shadow: 0px 1px 0px 3px #d6ad6038, 0px 0px 0px 5px #cb9a517e;
+    }
+    70% {
+      box-shadow: 0px 1px 0px 3px #d6ad6038, 0px 0px 0px 15px #cb9a5113;
+    }
+    100% {   
+      box-shadow: 1px 1px 2px 1px #d6ad6038, 0px 0px 0px 20px transparent;
+    }
+  }
+/* .btns {
   padding: 10px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-}
+} */
 
 /* Media buttons */
 
@@ -1376,7 +1493,7 @@ a.contact-link:is(:hover, :focus) {
 
 @media (max-width: 575px) {
   .barbers-pole {
-    height: 40px;
+    height: 50px;
     
     /* padding: 0 0 0 70px;   */
     margin-left:0px;
@@ -1974,4 +2091,13 @@ a.contact-link:is(:hover, :focus) {
   .back-top-btn {
     padding: 15px;
   }
+
+  .float {
+    padding: 15px;
+  }
 }
+
+.ali-center{
+  text-align: center;
+}
+
