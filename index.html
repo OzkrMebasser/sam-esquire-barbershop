@@ -166,21 +166,33 @@
       <article>
         <!-- 
         - #HERO
-        style="background-image: url('./assets/images/hero-banner.jpg')"
+          
       -->
 
         <section
           class="hero has-before has-bg-image"
           id="home"
           aria-label="home"
+          style="background-image: url('./assets/images/giphy.mp4')"
         >
-          <video class="hero-video" autoplay loop muted>
+          <video class="hero-video"  autoplay loop playsinline muted controls="true">
             <source src="./assets/images/hero_bg_vid.mp4" type="video/mp4" />
           </video>
-
+          <!-- <iframe
+          src="https://giphy.com/embed/gtCgpFDS92UsmcApAc"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+        <p>
+          <a href="https://giphy.com/gifs/gtCgpFDS92UsmcApAc">via GIPHY</a>
+        </p> -->
           <div class="container">
             <h1 class="h1 hero-title">Barber & Hair Cutting</h1>
             <span class="typed"><h3 id="typing"></h3></span>
+           
 
             <!-- 
           <p class="hero-text">
@@ -982,5 +994,10 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      window.onload = function () {
+        document.getElementById("autoplay").play();
+      };
+    </script>
   </body>
 </html>

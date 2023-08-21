@@ -619,11 +619,13 @@ body {
   padding-block-start: calc(var(--section-padding) + 40px);
   background-position: left;
   height: 100vh;
+  /* background-image: url('https://giphy.com/embed/gtCgpFDS92UsmcApAc'); */
 }
 
 .hero::before {
   inset: 0;
   /* background-color: var(--overlayer-light-black); */
+  /* background-image: url("../images/hero-bg-img.jpg"); */
   background-color: rgba(0, 0, 0, 0.699); 
   mix-blend-mode: multiply;
   z-index: -1;

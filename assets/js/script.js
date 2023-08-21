@@ -8,6 +8,29 @@ track.addEventListener("animationiteration", () => {
   track.style.transform = `translateX(${content.clientWidth}px)`;
 });
 
+// JavaScript
+
+// Seleccionar el elemento de video
+const video = document.querySelector('.hero-video');
+
+// Detectar Safari
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent); 
+
+// Si es Safari
+if (isSafari) {
+
+  // Mutea el video
+  video.muted = true;
+
+  // Reproducir el video
+  video.play(); 
+
+} else {
+
+  // Autoplay para otros navegadores  
+  video.autoplay = true;
+
+}
 
 const phrases = [
   "We specialize in precision cuts for men",
