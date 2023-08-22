@@ -108,4 +108,17 @@ addEventOnElem(window, "scroll", headerActive);
  * filter function
  */
 
-  
+
+
+//Media buttons 
+
+const floats = document.querySelectorAll(".float");
+
+// Loop through each element
+floats.forEach((float) => {
+  // Add click event listener
+  float.addEventListener("click", () => {
+    // Toggle the "open" class
+    float.classList.toggle("open");
+  });
+});
