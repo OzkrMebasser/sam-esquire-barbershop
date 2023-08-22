@@ -2,6 +2,10 @@
  * add event on element
  */
 "use strict"
+
+
+
+
 const track = document.querySelector(".track");
 const content = document.querySelector(".content");
 
@@ -77,27 +81,28 @@ function toggleNavbar() {
  */
 
 const header = document.querySelector("[data-header]");
-// const backTopBtn = document.querySelector("[data-back-top-btn]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 // const bookNowBtn = document.querySelector("[data-book-now-btn]");
 const bottomMenu = document.querySelector("[data-bottom-menu]");
+const mediaBtn = document.querySelector("[data-media-btn]");
 
 const headerActive = function () {
   if (window.scrollY > 300) {
     header.classList.add("active");
     bottomMenu.classList.add("active");
-    // backTopBtn.classList.add("active");
+    backTopBtn.classList.add("active");
     // bookNowBtn.classList.add("active");
+    mediaBtn.classList.add("active");
   } else {
     header.classList.remove("active");
     bottomMenu.classList.remove("active");
-    // backTopBtn.classList.remove("active");
+    backTopBtn.classList.remove("active");
     // bookNowBtn.classList.remove("active");
+    mediaBtn.classList.remove("active");
   }
-}
+};
 
 addEventOnElem(window, "scroll", headerActive);
-
-
 
 /**
  * filter function

@@ -73,7 +73,7 @@
    * spacing
    */
 
-  --section-padding: 80px;
+  --section-padding: 40px;
 
   /**
    * shadow
@@ -430,6 +430,7 @@ body {
 .marquee {
   overflow: hidden;
   white-space: nowrap;
+ 
 }
 
 .track {
@@ -498,6 +499,11 @@ body {
   /* float: left; display: flex */
   display: flex;
   align-items: left;
+}
+
+.logo-box-ctr{
+  /* display: flex; */
+  align-items: center;
 }
 
 .logo .span {
@@ -619,7 +625,7 @@ body {
   padding-block-start: calc(var(--section-padding) + 40px);
   background-position: left;
   height: 100vh;
-  /* background-image: url('https://giphy.com/embed/gtCgpFDS92UsmcApAc'); */
+  background-image: url('./assets/images/giphy.mp4')
 }
 
 .hero::before {
@@ -667,6 +673,14 @@ body {
   min-height: 5rem; /* Establece un espacio mínimo para el texto */
 }
 
+.sub-title{
+  color: var(--white);
+
+}
+
+.icon-sb{
+  font-size: 1.8rem;          
+}
 /* .barbers-pole {
   padding: 7px;
   height: 63px; */
@@ -747,7 +761,8 @@ body {
 
 .pricing::before {
   inset: 0;
-  background-color: var(--eerie-black-2_85);
+  background-color: var(--eerie-black-2);
+  background-image: url('../images/footer-bg.png');
   mix-blend-mode: multiply;
   z-index: -1;
 }
@@ -1064,6 +1079,7 @@ textarea.input-field {
   height: auto;
   padding: 30px;
   border-bottom-left-radius: 20px;
+  
 
 }
 
@@ -1098,7 +1114,16 @@ textarea.input-field {
 .swiper-button {
   border: 1px solid white;
 }
+.review-indicator{
+  position: relative;
 
+}
+
+.g-reviews{
+  margin: auto;
+  width: 100%;
+  margin-bottom: 2rem;
+}
 .swiper-slide img {
   width: 100px;
   height: 100px;
@@ -1155,7 +1180,8 @@ textarea.input-field {
 
 .footer {
   background-color: var(--eerie-black-2);
-  padding-block-end: 30px;
+  padding-block-end: 50px;
+  background-image: url('./assets/images/footer-bg.png');
 }
 
 .footer-top {
@@ -2064,7 +2090,7 @@ z-index:1000; */
   }
 
   /**
-   * APPOINTMENT
+   * REVIEW
    */
 
   .appoin-card .card-content {
@@ -2076,7 +2102,10 @@ z-index:1000; */
     
     margin-top: 45px;
   }
-  
+  .g-reviews{
+    margin: auto;
+    width: 50%;
+  }
   /**
    * FOOTER
    */

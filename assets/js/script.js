@@ -1,5 +1,5 @@
-'use strict';
- 
+"use strict";
+
 const track = document.querySelector(".track");
 const content = document.querySelector(".content");
 
@@ -10,27 +10,27 @@ track.addEventListener("animationiteration", () => {
 
 // JavaScript
 
-// Seleccionar el elemento de video
-const video = document.querySelector('.hero-video');
+// // Seleccionar el elemento de video
+// const video = document.querySelector('.hero-video');
 
-// Detectar Safari
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent); 
+// // Detectar Safari
+// const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-// Si es Safari
-if (isSafari) {
+// // Si es Safari
+// if (isSafari) {
 
-  // Mutea el video
-  video.muted = true;
+//   // Mutea el video
+//   video.muted = true;
 
-  // Reproducir el video
-  video.play(); 
+//   // Reproducir el video
+//   video.play();
 
-} else {
+// } else {
 
-  // Autoplay para otros navegadores  
-  video.autoplay = true;
+//   // Autoplay para otros navegadores
+//   video.autoplay = true;
 
-}
+// }
 
 const phrases = [
   "We specialize in precision cuts for men",
@@ -38,7 +38,7 @@ const phrases = [
   "Sharp cuts, sharp service.",
   "Where every cut is a work of art!",
   "Trimming traditions, modern styles!",
-  "Masterful cuts, lasting impressions!"
+  "Masterful cuts, lasting impressions!",
 ];
 
 let phraseIndex = 0;
@@ -86,9 +86,7 @@ const addEventOnElem = function (elem, type, callback) {
   } else {
     elem.addEventListener(type, callback);
   }
-}
-
-
+};
 
 /**
  * navbar toggle
@@ -107,15 +105,13 @@ const closeNavbar = () => navbar.classList.remove("active");
 
 addEventOnElem(navLinks, "click", closeNavbar);
 
-
-
 function toggleNavbar() {
   navbar.classList.toggle("active");
-  
+
   // Toggle icon
-  navbar.classList.contains("active") 
-  ? menuIcon.name = "cut-outline" 
-  : menuIcon.name = "menu-outline"; 
+  navbar.classList.contains("active")
+    ? (menuIcon.name = "cut-outline")
+    : (menuIcon.name = "menu-outline");
   // if(navbar.classList.contains("active")) {
   //   menuIcon.name = "cut-outline";
   // } else {
@@ -125,7 +121,7 @@ function toggleNavbar() {
 
 function toggleNavbar() {
   navbar.classList.toggle("active");
-  
+
   // Toggle icon and rotation
   if (navbar.classList.contains("active")) {
     menuIcon.name = "cut-outline";
@@ -160,11 +156,9 @@ const headerActive = function () {
     // bookNowBtn.classList.remove("active");
     mediaBtn.classList.remove("active");
   }
-}
+};
 
 addEventOnElem(window, "scroll", headerActive);
-
-
 
 /**
  * filter function
@@ -181,63 +175,85 @@ const filter = function () {
   lastClickedFilterBtn = this;
 
   for (let i = 0; i < filterItems.length; i++) {
-    if (this.dataset.filterBtn === filterItems[i].dataset.filter ||
-      this.dataset.filterBtn === "all") {
-
+    if (
+      this.dataset.filterBtn === filterItems[i].dataset.filter ||
+      this.dataset.filterBtn === "all"
+    ) {
       filterItems[i].style.display = "block";
       filterItems[i].classList.add("active");
-
     } else {
-
       filterItems[i].style.display = "none";
       filterItems[i].classList.remove("active");
-
     }
   }
-}
+};
 
 addEventOnElem(filterBtns, "click", filter);
 
-
 const testiomnialData = [
   {
-      avatar: "https://img.freepik.com/free-photo/woman-with-long-hair-yellow-hoodie-with-word-music-it_1340-39068.jpg",
-      name: "Simonette Lindermann",
-      review: "Mind-blowing discovery! changed my routine. Essential for everyone. A vise advice to all interested. Can't imagine without it!"
+    avatar:
+      "https://lh3.googleusercontent.com/a-/AD_cMMQak1wSznHhKgft8h3hUp3aiOSxIwafbWvq21-gDnaAXBU=w66-h66-p-rp-mo-ba2-br100",
+    name: "Ken Hall",
+    review:
+      "Best barbershop in Victoria, hands down. Sam does the best fades for an unbelievable price. You can go to another shop and pay double for lower quality!",
+    review_link: "https://g.co/kgs/CHDwGw",
   },
   {
-      avatar: "https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg",
-      name: "Merilee Beal",
-      review: "Unbelievable gem! Altered my life. A must-have now. Wholeheartedly advise it to everyone. An absolute game-changer"
+    avatar:
+      "https://lh3.googleusercontent.com/a-/AD_cMMSjljaD89VEy3iVMMtj9MYGsA3D4hb1nC8EBldIlUvewWE=w66-h66-p-rp-mo-ba2-br100",
+    name: "Ian Darrel M-T.",
+    review:
+      "I have been going to Esquire for almost 4 years now. Having moved from Toronto, it was tough to find a solid barber in a smaller city like Victoria until I found Sam. He is a master of his craft ...",
+    review_link: "https://goo.gl/maps/25QbH7r9zEQJWmF96",
   },
-  {
-      avatar: "https://img.freepik.com/free-photo/handsome-african-guy-with-stylish-haircut-taking-photo-digital-camera_171337-1345.jpg",
-      name: "Suzi Lankester",
-      review: "Phenomenal addition! Completely transformed my days. Can't go without it. Strongly endorse for all. A game-changer for sure!"
-  },
-  {
-      avatar: "https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg",
-      name: "Gaston Cunnow",
-      review: "Amazing product! It changed my life. Can't live without it now. Highly recommended to everyone!"
-  },
-  {
-      avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
-      name: "Marys Lobb",
-      review: "Life-altering find! Indispensable now. Enthusiastically suggest to all. A game-changer for everyone!"
-  },
-  {
-      avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
-      name: "Marys Lobb",
-      review: "Life-altering find! Indispensable now. Enthusiastically suggest to all. A game-changer for everyone!"
-  }, {
-      avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
-      name: "Marys Lobb",
-      review: "Life-altering find! Indispensable now. Enthusiastically suggest to all. A game-changer for everyone!"
-  }]
-var slideHolder = document.querySelector("#slideHolder")
-for (let i of testiomnialData) slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`
 
-const swiper = new Swiper('#craouselContainer', {
+  {
+    avatar:
+      "https://lh3.googleusercontent.com/a-/AD_cMMSmPFh6v530YN7Cq3jYsG5FP25XZKn73SaDWFzCaGttT7E=w66-h66-p-rp-mo-br100",
+    name: "Victor Lau",
+    review:
+      "Excellent! Had a wonderful, wise chat with Sam - great mindsets balanced by pragmaticism, growth, and logical utility to help oneself and others. Also excellent haircuts consistently.",
+    review_link: "https://goo.gl/maps/cxBbjByHZaowJx6Z6",
+  },
+
+  {
+    avatar:
+      "https://lh3.googleusercontent.com/a-/AD_cMMQu4AT0JjBg6nWS0sC8E0RPDBEDwetbYjw8d2lY2_UjVBI=w66-h66-p-rp-mo-br100",
+    name: "abhi jindal",
+    review:
+      "A great barber shop. Very impressive work. The owner is great, loving friendly guy, works mire than expectations.. never ever had a bad haircut from him. Must visit shop.",
+    review_link: "https://goo.gl/maps/i6h18z8RzV9cUUX18",
+  },
+  {
+    avatar: "https://lh3.googleusercontent.com/a-/AD_cMMTKCPce1gfp1aZGrWVzxdydKsSKbzvZu995k2-VMVC9y3c=w66-h66-p-rp-mo-ba2-br100",
+    name: "Mack",
+    review:
+      "Great guy, genuine and quick cut. Nice shop,  good location! I'll definately be going back. 😃 …",
+    review_link: "https://goo.gl/maps/JqitQ7mmkwCKTgHCA",
+  },
+
+  {
+    avatar:
+      "https://lh3.googleusercontent.com/a-/AD_cMMTS2a-HwrNw4VyylkOHFjSW1gjktLxFys2RG8vtahSellA=w66-h66-p-rp-mo-br100",
+    name: "Mehran FM",
+    review:
+      "I’ve been going here for 3+ years, Sam always does a great job on my hair, and doesn’t take too long. He takes walk ins too which is nice so I don’t have to make an appointment. Highly recommend.",
+    review_link: "https://goo.gl/maps/GwJRTfKHBJQ71AWz7",
+  },
+  {
+    avatar: "https://lh3.googleusercontent.com/a-/AD_cMMQFdXY-H3W3ICf16VXbarYdFTgA_T1KOvKOS9yvacLND98=w66-h66-p-rp-mo-br100",
+    name: "Mo Aref",
+    review: "Amazing Barber! One of the best in the city! always consistent and attention to detail. Hard working guy make sure to support him!",
+    review_link: "https://goo.gl/maps/nCrYziYraWDfomBp7",
+  },
+];
+
+let slideHolder = document.querySelector("#slideHolder");
+for (let i of testiomnialData)
+  slideHolder.innerHTML += `<div class="swiper-slide"> <p class="review-indicator">Click image below to see review in Google</p><div class="ImgHolder"><a class="ImgHolder" href="${i.review_link}" target="_blank"><img src="${i.avatar}"></a></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`;
+
+const swiper = new Swiper("#craouselContainer", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 2.3,
@@ -245,38 +261,34 @@ const swiper = new Swiper('#craouselContainer', {
   spaceBetween: 30,
   effect: "coverflow",
   coverflowEffect: {
-      rotate: 0,
-      depth: 800,
-      slideShadows: true,
+    rotate: 0,
+    depth: 800,
+    slideShadows: true,
   },
   pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+    el: ".swiper-pagination",
+    clickable: true,
   },
-  autoplay: { delay: 5000 }
+  autoplay: { delay: 5000 },
 });
-window.onresize = queryResizer
-queryResizer()
+window.onresize = queryResizer;
+queryResizer();
 function queryResizer() {
-  if (window.innerWidth < 724) swiper.params.slidesPerView = 2
-  if (window.innerWidth > 501) swiper.params.slidesPerView = 2
-  if (window.innerWidth > 724) swiper.params.slidesPerView = 2.3
-  if (window.innerWidth < 501) swiper.params.slidesPerView = 1
-  swiper.update()
+  if (window.innerWidth < 724) swiper.params.slidesPerView = 2;
+  if (window.innerWidth > 501) swiper.params.slidesPerView = 2;
+  if (window.innerWidth > 724) swiper.params.slidesPerView = 2.3;
+  if (window.innerWidth < 501) swiper.params.slidesPerView = 1;
+  swiper.update();
 }
 
 // Get all elements with class "float"
-const floats = document.querySelectorAll('.float'); 
+const floats = document.querySelectorAll(".float");
 
-// Loop through each element 
-floats.forEach(float => {
-
+// Loop through each element
+floats.forEach((float) => {
   // Add click event listener
-  float.addEventListener('click', () => {
-
+  float.addEventListener("click", () => {
     // Toggle the "open" class
-    float.classList.toggle('open');
-
+    float.classList.toggle("open");
   });
-
 });

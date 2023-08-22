@@ -46,7 +46,7 @@
   visibility: hidden;
   transition: var(--transition-1);
   /* padding: 10px; */
-  z-index: 4;
+  z-index: 999999999999999;
   opacity: 0;
   width: 40px;
   height: 40px;
@@ -93,6 +93,8 @@
 
 .float.open .trigger .fa::before {
   content: "\f00d";
+  color: white;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .float .trigger .fa::after {
@@ -101,7 +103,7 @@
 
 .fab.open .trigger i {
   transition: all 0.4s ease;
-  /* transform: translateY(5px) rotate(360deg); */
+  transform: translateY(5px) rotate(360deg);
   opacity: 1;
 }
 
@@ -255,27 +257,27 @@
 } */
 
 .float .actions .p-info:nth-child(1) {
-  transform: translateY(-140px);
+  transform: translateY(-149px);
 }
 
 .float .actions .p-info:nth-child(2) {
-  transform: translateY(-190px);
+  transform: translateY(-199px);
 }
 
 .float .actions .p-info:nth-child(3) {
-  transform: translateY(-240px);
+  transform: translateY(-249px);
 }
 
 .float .actions .p-info:nth-child(4) {
-  transform: translateY(-290px);
+  transform: translateY(-299px);
 }
 
 .float .actions .p-info:nth-child(5) {
-  transform: translateY(-340px);
+  transform: translateY(-349px);
 }
 
 .float .actions .p-info:nth-child(6) {
-  transform: translateY(-390px);
+  transform: translateY(-399px);
 }
 
 
