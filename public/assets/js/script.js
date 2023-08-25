@@ -145,9 +145,9 @@ const mediaBtn = document.querySelector("[data-media-btn]");
 const appointmentBtn = function () {
   if (window.scrollY > 650 && window.scrollY <= 2600) {
     bottomMenu.classList.add("active");
-  } else if (window.scrollY > 2600 && window.scrollY <= 4800) {
+  } else if (window.scrollY > 2600 && window.scrollY <= 5000) {
     bottomMenu.classList.remove("active");
-  } else if (window.scrollY > 4800) {
+  } else if (window.scrollY > 5000) {
     bottomMenu.classList.add("active");
   }
   else{

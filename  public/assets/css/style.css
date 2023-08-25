@@ -284,12 +284,12 @@ body {
 .simple-btn{
   
     color: var(--black-black);
-  
+    margin: auto;
     background-image: var(--golden-yellow);
     /* display: flex; */
     align-items: center;
     /* gap: 10px; */
-    max-width: max-content;
+    /* max-width: max-content; */
     padding: 10px 25px;
     font-family: var(--ff-oswald);
     font-size: var(--fs-14);
@@ -301,6 +301,27 @@ body {
   
 }
 
+.pricing-btn{
+  
+  color: var(--black-black);
+  margin:0 20px 0 20px;
+
+  background-image: var(--golden-yellow);
+  
+  align-items: center;
+  /* gap: 10px; */
+  /* max-width: max-content; */
+
+  padding: 10px 25px;
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  border-radius: var(--radius-5);
+  /* overflow: hidden;
+  */
+
+}
 .btn-yellow {
   color: var(--black-black);
 

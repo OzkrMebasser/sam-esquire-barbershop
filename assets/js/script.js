@@ -143,11 +143,11 @@ const bottomMenu = document.querySelector("[data-bottom-menu]");
 const mediaBtn = document.querySelector("[data-media-btn]");
 
 const appointmentBtn = function () {
-  if (window.scrollY > 400 && window.scrollY <= 2000) {
+  if (window.scrollY > 550 && window.scrollY <= 2700) {
     bottomMenu.classList.add("active");
-  } else if (window.scrollY > 2000 && window.scrollY <= 3200) {
+  } else if (window.scrollY > 2700 && window.scrollY <= 5000) {
     bottomMenu.classList.remove("active");
-  } else if (window.scrollY > 3200) {
+  } else if (window.scrollY > 5000) {
     bottomMenu.classList.add("active");
   }
   else{
