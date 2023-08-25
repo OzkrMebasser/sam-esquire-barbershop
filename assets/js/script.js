@@ -142,16 +142,32 @@ const backTopBtn = document.querySelector("[data-back-top-btn]");
 const bottomMenu = document.querySelector("[data-bottom-menu]");
 const mediaBtn = document.querySelector("[data-media-btn]");
 
+const appointmentBtn = function () {
+  if (window.scrollY > 400 && window.scrollY <= 2000) {
+    bottomMenu.classList.add("active");
+  } else if (window.scrollY > 2000 && window.scrollY <= 3200) {
+    bottomMenu.classList.remove("active");
+  } else if (window.scrollY > 3200) {
+    bottomMenu.classList.add("active");
+  }
+  else{
+    bottomMenu.classList.remove("active");
+  }
+};
+
+addEventOnElem(window, "scroll", appointmentBtn);
+
+
 const headerActive = function () {
   if (window.scrollY > 300) {
     header.classList.add("active");
-    bottomMenu.classList.add("active");
+    // bottomMenu.classList.add("active");
     backTopBtn.classList.add("active");
     // bookNowBtn.classList.add("active");
     mediaBtn.classList.add("active");
   } else {
     header.classList.remove("active");
-    bottomMenu.classList.remove("active");
+    // bottomMenu.classList.remove("active");
     backTopBtn.classList.remove("active");
     // bookNowBtn.classList.remove("active");
     mediaBtn.classList.remove("active");
@@ -159,6 +175,11 @@ const headerActive = function () {
 };
 
 addEventOnElem(window, "scroll", headerActive);
+
+
+/**
+ * Bottom button 
+ */
 
 /**
  * filter function

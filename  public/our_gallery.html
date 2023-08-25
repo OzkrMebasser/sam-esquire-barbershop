@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Esquire Barbershop</title>
+    <meta name="title" content="Esquire Barbershop" />
+    <meta name="description" content="The best barbershop " />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/media.css" /> -->
+    <link rel="stylesheet" href="./assets/css/galleryImages.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/gallery.css"/> -->
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - flaticon/fontawesome
+  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/flaticon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+  </head>
+
+  <body id="top" class="body">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <ul class="header-top-list">
+            <li class="social-list marquee">
+              <div class="track">
+                <div class="content">
+                  <p class="inline">We speak English</p>
+                  <p class="inline">Nous parlons Français</p>
+                  <p class="inline">We speak Kabyle</p>
+                  <p class="inline">نحن نتحدث العربية</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-bottom" data-header>
+        <div class="container">
+          <div class="logo-box">
+            <img
+              class="barbers-pole"
+              src="./assets/images/barberspole.gif"
+              alt="barbershop"
+            />
+            <a href="#" class="logo">
+              <span class="logo-text logo-effect"
+                >ESQUIRE
+                <p class="span">Barber Shop</p>
+                <p class="esquire">
+                  By <strong class="esquire">SAMCUTS</strong>
+                </p>
+              </span>
+            </a>
+          </div>
+
+          <nav class="navbar container" data-navbar>
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="./index.html" class="navbar-link" data-nav-link
+                  >Home</a
+                >
+              </li>
+
+              <li class="navbar-item">
+                <a href="#services" class="navbar-link" data-nav-link
+                  >Services</a
+                >
+              </li>
+
+              <li class="navbar-item">
+                <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
+              </li>
+
+              <li class="navbar-item">
+                <a href="./our_gallery.html" class="navbar-link" data-nav-link
+                  >Gallery</a
+                >
+              </li>
+
+              <li class="navbar-item">
+                <a
+                  href="https://booksy.com/en-ca/16507_esquire-barber-shop_barbers_467191_victoria?do=invite&_branch_match_id=1180894971292242562&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVT8%2F2LwwNz8xwckoCADFkZ%2F0iAAAA"
+                  class="navbar-link"
+                  data-nav-link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  referrerpolicy="no-referrer"
+                  >Appointment</a
+                >
+              </li>
+
+              <li class="navbar-item">
+                <a href="tel:+17784322500" class="navbar-link" data-nav-link
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            class="nav-toggle-btn rotate-360"
+            aria-label="toggle menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <!-- <a href="#" class="btn has-before">
+          <span class="span">Appointment</span>
+
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <p class="heading">OUR GALLERY</p>
+      <p class="sub-title-gallery">Click on Images</p>
+      <div class="contain">
+        <!-- Image #1 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_1.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #2 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_2.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #3 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_3.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #4 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_4.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #5 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_5.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #6 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_6.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #7 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_7.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #8 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_8.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #9 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_9.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #10 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_10.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #11 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_11.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #12 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_12.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #13 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_1.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #14 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_2.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #15 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_3.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #16 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_4.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #17 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_17.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #18 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_18.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #19 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_19.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+        <!-- Image #20 -->
+        <div class="container-glass">
+          <img
+            className="img"
+            src="./assets/images/gallery/gallery_20.jpeg"
+            alt="Sam Esquire barbershop"
+          />
+        </div>
+      </div>
+    </main>
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer has-bg-image">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="logo-box-ctr">
+              <a href="#" class="logo">
+                <span class="logo-text logo-effect"
+                  >ESQUIRE
+                  <p class="span">Barber Shop</p>
+                  <p class="esquire">
+                    By <strong class="esquire">SAMCUTS</strong>
+                  </p>
+                </span>
+              </a>
+            </div>
+
+            <form class="input-wrapper">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Enter Your Email"
+                required
+                class="email-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe Now</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+
+          <div class="footer-link-box">
+            <ul class="footer-list">
+              <li>
+                <a href="./index.html#pricing" class="footer-list-title"
+                  >Services</a
+                >
+              </li>
+
+              <li>
+                <a href="./index.html#pricing" class="footer-link has-before"
+                  >Hair Cutting</a
+                >
+              </li>
+
+              <li>
+                <a href="./index.html#pricing" class="footer-link has-before"
+                  >Shaving & Design</a
+                >
+              </li>
+
+              <li>
+                <a href="./index.html#pricing" class="footer-link has-before"
+                  >Hair Treatments</a
+                >
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">BUSSINES HOURS</p>
+                <div id="open-hours"></div>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Contact Us</p>
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <address class="contact-link">
+                  777 Broughton St, Victoria, BC V8W 1E3
+                </address>
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                <a href="tel:+17784322500" class="contact-link">
+                  (778) 432 2500</a
+                >
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <a href="mailto:esquirebarber777@gmail.com" class="contact-link"
+                  >esquirebarber777@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2023 <a href="#" class="copyright-link">Esquire Barbershop</a
+            ><br />
+            All Rights Reserved.
+          </p>
+          <p class="copyright">
+            <a href="#" class="copyright-link"
+              >Made with &#x1F9E1; by Ozkr Mebasser</a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--
+         #BOTTOM MENU  
+       -->
+    <!-- #MEDIA BUTTONS -->
+
+    <div class="float" data-media-btn>
+      <div class="trigger">
+        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+      </div>
+
+      <div class="actions">
+        <!-- Messanger -->
+        <div class="p-info">
+          <div class="p-media-icon">
+            <a
+              href="https://m.me/samesquire.barbershop.7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-messenger"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Telephone -->
+        <div class="p-info">
+          <div class="p-media-icon">
+            <a href="tel:+17784322500">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="p-info">
+          <div class="p-media-icon">
+            <a href="mailto:esquirebarber777@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Location -->
+        <div class="p-info">
+          <div class="p-media-icon">
+            <a href="https://goo.gl/maps/82rcSUApuGUV5in86">
+              <i class="fas fa-map-marked-alt"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Instagram -->
+        <div class="p-info">
+          <div class="p-media-icon">
+            <a href="https://www.instagram.com/esquire_victoria/">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Facebook -->
+        <div class="p-info">
+          <div class="p-media-icon">
+            <a href="https://www.facebook.com/samesquire.barbershop.7">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- </a> -->
+
+    <!-- #MAKE AN APPOINTMEN BTN-->
+    <a
+      href="https://booksy.com/en-ca/16507_esquire-barber-shop_barbers_467191_victoria?hl=en-US&gei=2PLkZK7qPIG2qtsPrpyLMA&rwg_token=AFP2EnOQNCJ7hFf19-CW5mJvnvhrcLKK05clk3KigwmNd8klL0lsdeluM13Esmpm-436iaanZK279iFI1BBfCmhpVctUgVfbaw%3D%3D"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btns bottom-sticky-menu"
+      data-bottom-menu
+    >
+      Make an appointment
+    </a>
+    <!-- #BACK TO TOP BTN-->
+    <a
+      href="#top"
+      class="back-top-btn btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/open_hours.js" charset="utf-8"></script>
+
+    <script>
+      const hours = {
+        Monday: { start: 1000, end: 2000 },
+        Tuesday: {},
+        Wednesday: { start: 1000, end: 2000 },
+        Thursday: { start: 900, end: 1800 },
+        Friday: { start: 1000, end: 2000 },
+        Saturday: { start: 900, end: 1800 },
+        Sunday: { start: 1100, end: 1700 },
+      };
+
+      OpenHours.generateTime(hours);
+    </script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- <script>
+      window.onload = function () {
+        document.getElementById("autoplay").play();
+      };
+    </script> -->
+  </body>
+</html>
