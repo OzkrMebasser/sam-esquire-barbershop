@@ -142,20 +142,50 @@ const backTopBtn = document.querySelector("[data-back-top-btn]");
 const bottomMenu = document.querySelector("[data-bottom-menu]");
 const mediaBtn = document.querySelector("[data-media-btn]");
 
+// const appointmentBtn = function () {
+//   if (window.scrollY > 550 && window.scrollY <= 2700) {
+//     bottomMenu.classList.add("active");
+//   } else if (window.scrollY > 2700 && window.scrollY <= 5000) {
+//     bottomMenu.classList.remove("active");
+//   } else if (window.scrollY > 5000) {
+//     bottomMenu.classList.add("active");
+//   }
+//   else{
+//     bottomMenu.classList.remove("active");
+//   }
+// };
+
+// addEventOnElem(window, "scroll", appointmentBtn);
+
 const appointmentBtn = function () {
-  if (window.scrollY > 650 && window.scrollY <= 2600) {
-    bottomMenu.classList.add("active");
-  } else if (window.scrollY > 2600 && window.scrollY <= 5000) {
-    bottomMenu.classList.remove("active");
-  } else if (window.scrollY > 5000) {
-    bottomMenu.classList.add("active");
-  }
-  else{
-    bottomMenu.classList.remove("active");
+  const isMobile = window.innerWidth <= 768; // Change the breakpoint as needed
+
+  if (isMobile) {
+    if (window.scrollY > 560 && window.scrollY <= 2700) {
+      bottomMenu.classList.add("active");
+    } else if (window.scrollY > 2700 && window.scrollY <= 6200) {
+      bottomMenu.classList.remove("active");
+    } else if (window.scrollY > 6200) {
+      bottomMenu.classList.add("active");
+    } else {
+      bottomMenu.classList.remove("active");
+    }
+  } else {
+    if (window.scrollY > 530 && window.scrollY <= 1800) {
+      bottomMenu.classList.add("active");
+    } else if (window.scrollY > 1800 && window.scrollY <= 3500) {
+      bottomMenu.classList.remove("active");
+    } else if (window.scrollY > 3500) {
+      bottomMenu.classList.add("active");
+    } else {
+      bottomMenu.classList.remove("active");
+    }
   }
 };
 
-addEventOnElem(window, "scroll", appointmentBtn);
+window.addEventListener("scroll", appointmentBtn);
+
+
 
 
 const headerActive = function () {
