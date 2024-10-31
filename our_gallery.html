@@ -172,168 +172,8 @@
     <main>
       <p class="heading" data-aos="fade-down">OUR GALLERY</p>
       <p class="sub-title-gallery" data-aos="fade-up">Click on Images</p>
-      <div class="contain">
-        <!-- Image #1 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_1.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #2 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_2.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #3 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_3.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #4 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_4.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #5 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_5.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #6 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_6.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #7 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_7.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #8 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_8.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #9 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_9.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #10 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_10.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #11 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_11.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #12 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_12.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #13 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_1.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #14 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_2.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #15 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_3.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #16 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_4.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #17 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_17.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #18 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_18.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #19 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_19.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-        <!-- Image #20 -->
-        <div class="container-glass" data-aos="zoom-in-up">
-          <img
-            className="img"
-            src="./assets/images/gallery/gallery_20.jpeg"
-            alt="Sam Esquire barbershop"
-          />
-        </div>
-      </div>
+       <!-- Contenedor de la galería de imágenes -->
+       <div id="gallery-container" class="contain"></div>
     </main>
     <!-- 
     - #FOOTER
@@ -570,6 +410,58 @@
     <!-- 
     - ionicon link
   -->
+  <script>
+    // Array con las rutas de las imágenes y sus descripciones
+    const images = [
+  { src: './assets/images/gallery/gallery_1.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_2.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_3.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_4.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_5.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_6.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_7.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_8.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_9.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_10.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_11.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_12.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_13.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_14.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_15.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_16.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_17.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_18.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_19.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_20.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_21.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_22.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_23.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_24.jpeg', alt: 'Sam Esquire barbershop' },
+  { src: './assets/images/gallery/gallery_25.jpeg', alt: 'Sam Esquire barbershop' }
+];
+
+
+    // Selecciona el contenedor de la galería
+    const galleryContainer = document.getElementById('gallery-container');
+
+    // Recorre el array de imágenes y crea cada elemento de manera dinámica
+    images.forEach((image) => {
+      // Crea el div contenedor de la imagen
+      const container = document.createElement('div');
+      container.classList.add('container-glass');
+      container.setAttribute('data-aos', 'zoom-in-up');
+
+      // Crea la imagen y asigna los atributos
+      const img = document.createElement('img');
+      img.classList.add('img');
+      img.src = image.src;
+      img.alt = image.alt;
+
+      // Añade la imagen al contenedor y el contenedor a la galería
+      container.appendChild(img);
+      galleryContainer.appendChild(container);
+    });
+  </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
