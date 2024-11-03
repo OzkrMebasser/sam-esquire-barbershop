@@ -581,7 +581,7 @@ body {
 }
 
 .navbar.active {
-  max-height: 321px;
+  max-height: 90vh;
   transition-duration: 0.5s;
 }
 
