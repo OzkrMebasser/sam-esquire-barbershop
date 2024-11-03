@@ -17,11 +17,10 @@
   -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    
     <!-- 
     - animations aos
   -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- 
     - custom css link
@@ -98,7 +97,7 @@
               src="./assets/images/barberspole.gif"
               alt="barbershop"
             />
-            <a href="#" class="logo">
+            <a href="./index.html" class="logo">
               <span class="logo-text logo-effect"
                 >ESQUIRE
                 <p class="span">Barber Shop</p>
@@ -118,15 +117,19 @@
               </li>
 
               <li class="navbar-item">
-                <a href="#services" class="navbar-link" data-nav-link
+                <a href="./index.html#services" class="navbar-link" data-nav-link
                   >Services</a
                 >
               </li>
 
               <li class="navbar-item">
-                <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
+                <a href="./index.html#pricing" class="navbar-link" data-nav-link>Pricing</a>
               </li>
-
+              <li class="navbar-item">
+                <a href="./our-products.html" class="navbar-link" data-nav-link
+                  >Products</a
+                >
+              </li>
               <li class="navbar-item">
                 <a href="./our_gallery.html" class="navbar-link" data-nav-link
                   >Gallery</a
@@ -135,7 +138,8 @@
 
               <li class="navbar-item">
                 <a
-                href="https://booksy.com/en-ca/16507_esquire-barber-shop_barbers_467191_victoria"                  class="navbar-link"
+                  href="https://booksy.com/en-ca/16507_esquire-barber-shop_barbers_467191_victoria"
+                  class="navbar-link"
                   data-nav-link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -172,8 +176,8 @@
     <main>
       <p class="heading" data-aos="fade-down">OUR GALLERY</p>
       <p class="sub-title-gallery" data-aos="fade-up">Click on Images</p>
-       <!-- Contenedor de la galería de imágenes -->
-       <div id="gallery-container" class="contain"></div>
+      <!-- Contenedor de la galería de imágenes -->
+      <div id="gallery-container" class="contain"></div>
     </main>
     <!-- 
     - #FOOTER
@@ -385,12 +389,12 @@
     - custom js link
   -->
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 2000, delay: 400 });
-  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 2000, delay: 400 });
+    </script>
 
-<script src="./assets/js/gallery-imgs.js"></script>
+    <script src="./assets/js/gallery-imgs.js"></script>
     <script src="./assets/js/gallery.js"></script>
     <script src="./assets/js/open_hours.js" charset="utf-8"></script>
 
