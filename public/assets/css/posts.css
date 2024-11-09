@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Poppins; */
+    /* color: white; */
+  }
+  
+  body {
+    background-color: black;
+    
+  }
+
+  
+  
+  .post-container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .post-container img{
+    width: 100%;
+  
+  }
+  .post-container p {
+    color: #fff;
+  }
+.blog-title{
+  margin-top: 15rem;
+  color: #d6ad60;
+}
+.blog-subtitles{
+  margin: 25px 0 0 0;
+  color: #d6ad60;
+}
+  .image{
+    margin: 20px 0 20px 0;
+  }

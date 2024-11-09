@@ -32,12 +32,18 @@
 
 .blog {
     background-color: #1e1e1e;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     flex: 1 0 calc(33.33% - 20px);
     display: flex;
     flex-direction: column;
+    transition: all .3s;
+
+}
+.blog:hover{
+    box-shadow: 0 0 11px rgb(145, 144, 144); 
+    transform: scale(.99);
 }
 
 .blog-image {
@@ -75,17 +81,28 @@
 .blog-content h2 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #007bff;
+    color: #d6ad60;
 }
 
 .blog-content p {
     flex-grow: 1;
     color: #bbb;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .read-more-btn {
     margin: auto;
+    opacity: 1;
+    transition: opacity 0.3s;
+    transition: all .2s ease-in-out;
+
+}
+.read-more-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+   
+
 }
 /* .blog-content a {
     align-self: flex-start;
