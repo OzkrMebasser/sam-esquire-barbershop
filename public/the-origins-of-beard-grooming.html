@@ -4,31 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esquire Barbershop</title>
-    <meta name="description" content="The best barbershop" />
 
-    <!-- Favicon -->
+    <!-- 
+        - primary meta tags
+      -->
+    <title>Esquire Barbershop</title>
+    <meta name="title" content="Esquire Barbershop" />
+    <meta name="description" content="The best barbershop " />
+
+    <!-- 
+        - favicon
+      -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    <!-- Custom CSS -->
+    <!-- 
+        - animations aos
+      -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- 
+        - custom css link
+      -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/posts.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <link rel="stylesheet" href="./assets/css/galleryImages.css" />
+    <link rel="stylesheet" href="./assets/css/gallery.css"/>
 
-    <!-- Google Font -->
+    <!-- 
+        - google font link
+      -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+        - flaticon/fontawesome
+      -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/flaticon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  />  
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- 
+        - preload images
+      -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
   </head>
+
   <body id="top" class="body">
     <!-- 
-    - #HEADER
-  -->
+        - #HEADER
+      -->
 
     <header class="header">
       <div class="header-top">
@@ -56,7 +98,7 @@
               src="./assets/images/barberspole.gif"
               alt="barbershop"
             />
-            <a href="#" class="logo">
+            <a href="./index.html" class="logo">
               <span class="logo-text logo-effect"
                 >ESQUIRE
                 <p class="span">Barber Shop</p>
@@ -74,6 +116,7 @@
                   >Home</a
                 >
               </li>
+
               <li class="navbar-item">
                 <a
                   href="./index.html#services"
@@ -82,28 +125,17 @@
                   >Services</a
                 >
               </li>
-              <!-- <li class="navbar-item">
-                <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
-              </li> -->
-              <li class="navbar-item">
-                <a href="./blog.html" class="navbar-link" data-nav-link>Blog</a>
-              </li>
 
+              <li class="navbar-item">
+                <a href="./blog.html" class="navbar-link" data-nav-link
+                  >Blog</a
+                >
+              </li>
               <li class="navbar-item">
                 <a href="./our-products.html" class="navbar-link" data-nav-link
                   >Products</a
                 >
               </li>
-              <!-- <li class="navbar-item">
-                <a href="#services" class="navbar-link" data-nav-link
-                  >Services</a
-                >
-              </li>
-
-              <li class="navbar-item">
-                <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
-              </li> -->
-
               <li class="navbar-item">
                 <a href="./our_gallery.html" class="navbar-link" data-nav-link
                   >Gallery</a
@@ -139,18 +171,19 @@
           </button>
 
           <!-- <a href="#" class="btn has-before">
-          <span class="span">Appointment</span>
-
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a> -->
+              <span class="span">Appointment</span>
+    
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a> -->
         </div>
       </div>
     </header>
 
+
     <main class="post-container">
       <article>
         <h1 class="blog-title">The Origins of Beard Grooming</h1>
-        <div class="byline">Sam Esquire - 5th June 2023</div>
+        <div class="byline">Sam Esquire - June 5, 2023</div>
         <p>
           Welcome to ESQUIRE Barber Shop in beautiful Victoria, BC! Here, we
           know that a well-groomed beard is more than just facial hair—it’s an
