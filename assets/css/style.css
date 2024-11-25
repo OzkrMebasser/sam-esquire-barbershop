@@ -451,7 +451,7 @@ body {
   left: 0;
   width: 100%;
   padding-block: 10px;
-  z-index: 4;
+  z-index: 99999;
   top: 55px;
 }
 
@@ -1566,6 +1566,7 @@ z-index:1000; */
     margin-inline: auto;
     border-radius: 0 0 20px 20px;
     font-size: 1.4rem;
+  
   }
 
   .btn {
@@ -1580,6 +1581,9 @@ z-index:1000; */
    * HEADER
    */
 
+  .header-over{
+    z-index: 99999999;
+  }
   .header-top {
     position: absolute;
     top: 0;
