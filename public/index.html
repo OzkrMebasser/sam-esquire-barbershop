@@ -27,6 +27,7 @@
   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
 
     <!-- 
     - google font link
@@ -123,10 +124,9 @@
               <!-- <li class="navbar-item">
                 <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
               </li> -->
-               <li class="navbar-item">
+              <li class="navbar-item">
                 <a href="./blog.html" class="navbar-link" data-nav-link>Blog</a>
               </li>
-
 
               <li class="navbar-item">
                 <a href="./our-products.html" class="navbar-link" data-nav-link
@@ -175,6 +175,47 @@
         </div>
       </div>
     </header>
+    <!-- MODAL -->
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal-title">
+        <div class="logo-box">
+          <img
+            class="barbers-pole"
+            src="./assets/images/barberspole.gif"
+            alt="barbershop"
+          />
+          <a href="./index.html" class="logo">
+            <span class="logo-text logo-effect"
+              >ESQUIRE
+              <p class="span">Barber Shop</p>
+              <p class="esquire">
+                By <strong class="esquire">SAMCUTS</strong>
+              </p>
+            </span>
+          </a>
+        </div>
+      </div>
+        <p class="modal-offer">
+          <i class="fa fa-scissors" aria-hidden="true"></i> First Haircut:
+          <strong>5% Off!</strong>
+        </p>
+        <p class="modal-offer">
+          <i class="fas fa-user-friends"></i> Bring Two Friends:
+          <strong>Get a Free Haircut!</strong>
+        </p>
+        <a
+          class="modal-offer simple-btn"
+          href="https://m.me/samesquire.barbershop.7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="ask-promo">Get Your Discount Now!</button>
+        </a>
+
+        <button id="close-modal-btn" class="close-btn">X</button>
+      </div>
+    </div>
 
     <main>
       <article>
@@ -739,7 +780,7 @@
                 <div class="gallery-card">
                   <figure class="card-banner img-holder img-shadows">
                     <img
-                      src="./assets/images/home_gallery_3.png"
+                      src="./assets/images/home_gallery_3.jpeg"
                       width="422"
                       height="550"
                       loading="lazy"
@@ -768,7 +809,7 @@
                 <div class="gallery-card">
                   <figure class="card-banner img-holder img-shadows">
                     <img
-                      src="./assets/images/home_gallery_4.jpg"
+                      src="./assets/images/home_gallery_4.jpeg"
                       width="422"
                       height="550"
                       loading="lazy"
@@ -828,7 +869,7 @@
                 <p class="section-text"></p>
 
                 <div class="mapouter" data-aos="zoom-in-up">
-                  <div class="gmap_canvas" >
+                  <div class="gmap_canvas">
                     <iframe
                       class="gmap_iframe"
                       width="100%"
@@ -960,7 +1001,6 @@
                   >Hair Treatments</a
                 >
               </li>
-              
             </ul>
 
             <ul class="footer-list" data-aos="zoom-in-up">
@@ -1110,6 +1150,7 @@
     - custom js link
   -->
     <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/modal.js" defer></script>
     <script src="./assets/js/open_hours.js" charset="utf-8"></script>
     <!-- <script type="text/javascript" src="https://booksy.com/widget/code.js?id=16507&country=ca&lang=en-US"></script> -->
 

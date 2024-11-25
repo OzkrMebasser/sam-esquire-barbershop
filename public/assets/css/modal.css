@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slide-in 0.3s ease;
+    
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .modal-offer {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  #close-modal-btn{
+    position: relative;
+  
+    margin: auto;
+
+    
+  }
+  .ask-promo{
+    
+    margin: auto;
+    
+    
+  }
+  .close-btn {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  
+    
+  }
+  
+  .close-btn:hover {
+    background-color: #e60000;
+  }
+  
+  .show-modal {
+    opacity: 1;
+  }
+  
+  .hide-modal {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translate(-50%, -70%);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .modal {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .modal-title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .modal-offer {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+  
+    .close-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal {
+      max-width: 95%;
+    }
+  
+    .modal-title {
+      font-size: 18px;
+    }
+  
+    .modal-offer {
+      font-size: 14px;
+    }
+  
+    .close-btn {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+  
