@@ -85,17 +85,17 @@ body {
 
 /* ocultar el modal completamente */
 .hide-modal {
-opacity: 0;
-z-index: -9999; 
-pointer-events: none; 
-transition: opacity 0.25s ease, z-index 0.25s ease;
+  opacity: 0;
+  z-index: -1;  
+  pointer-events: none;  
+  transition: opacity 0.25s ease, z-index 0s ease 0.25s;
 }
 
 /* mostrar el modal */
 .show-modal {
-opacity: 1;
-z-index: 9999; 
-pointer-events: all; 
+  opacity: 1;
+  z-index: 9999;
+  pointer-events: all;
 }
 
 @keyframes slide-in {
